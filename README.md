@@ -5,7 +5,9 @@ flycheck-janet - Flycheck for Janet
 
 Flycheck-janet is a syntax checker definition for flycheck which supports
 the [Janet][] programming language using the janet compiler as the backend.
-Note that your version of Janet must support the `-k` option.
+Note that your version of Janet must support the `-k` option. Also, current
+limitations in the 'compile only' feature of `janet` mean that imports will
+not be considerd correctly, leading to erroneous errors in some situations.
 
 Installation
 ------------
