@@ -41,9 +41,9 @@ end point positions for the error."
                  (save-excursion
                    (goto-char start-point)
                    (setf (flycheck-error-column err)
-                         (current-column))
+                         (1+ (current-column)))
                    (setf (flycheck-error-line err)
-                         (1+ (count-lines 1 (point)))))))))
+                         (count-lines 1 (point))))))))
           errors)
   errors)
 
