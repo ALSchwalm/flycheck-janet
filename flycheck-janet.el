@@ -43,7 +43,7 @@ end point positions for the error."
                    (setf (flycheck-error-column err)
                          (1+ (current-column)))
                    (setf (flycheck-error-line err)
-                         (count-lines 1 (point))))))))
+                         (count-lines 1 (1+ (point)))))))))
           errors)
   errors)
 
